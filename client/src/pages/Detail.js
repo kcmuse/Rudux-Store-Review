@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
+//A hook to access the redux store's state. This hook takes a selector function as an argument. The selector is called with the store state.
 import { useDispatch, useSelector } from 'react-redux';
 
 import Cart from '../components/Cart';
@@ -15,6 +16,7 @@ import { idbPromise } from '../utils/helpers';
 import spinner from '../assets/spinner.gif';
 
 function Detail() {
+  // A hook to access the redux dispatch function.
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
   const { id } = useParams();

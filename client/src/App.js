@@ -39,6 +39,8 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+// The "Provider" component here allows the everything nested within it
+// to have access to the Redux Store
 function App() {
   return (
     <ApolloProvider client={client}>

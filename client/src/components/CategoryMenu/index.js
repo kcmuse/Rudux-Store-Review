@@ -9,6 +9,7 @@ import { QUERY_CATEGORIES } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 
 function CategoryMenu() {
+    // A hook to access the redux dispatch function.
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
 
